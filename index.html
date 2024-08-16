@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: somer;
+            src: url("./Somar-Bold.otf");
+        }
         body {
             direction: rtl;
             font-family: 'Almarai', sans-serif;
@@ -37,7 +41,7 @@
     <header class="header-bg text-white text-center py-5">
         <div class="container">
                 <!-- مكان لوضع اللوغو -->
-                <b style="font-size: calc(1.475rem + 2.7vw); font-weight: 400; margin-bottom: 100px;">فرصه</b>
+                <b style="font-size: calc(1.475rem + 2.7vw); font-weight: 400; margin-bottom: 100px; font-family: somer;" class="display-4">فرصه</b>
             
             <h1 class="display-4">معًا لبناء المستقبل</h1>
             <p class="lead">نؤمن بأن التعليم هو الذي يغير الحاضر ويصنع المستقبل</p>
@@ -60,23 +64,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 style="color: #16263e;">رؤيتنا</h3>
+                    <h3 style="color: #ffffff; background-color: #2e5691; width: 5em; text-align: center; " class=" rounded shadow">رؤيتنا</h3>
                     <p>أن نكون اليد الممدودة لكل من يحتاج إلى دعم، وأن نساعد في بناء حياة أفضل للجميع.</p>
                 </div>
-                <div class="col-md-6">
-                    <h3 style="color:  #16263e;">مهمتنا</h3>
-                    <p>نحن نعمل على تقديم العون والمساعدة لمن يحتاجها، ونؤمن بأن لكل شخص حق في فرصة جديدة.</p>
+                <div class="col-md-6 rounded" >
+                    <h3   style="color: #ffffff; background-color: #2e5691; width: 5em; text-align: center;" class="rounded shadow" >مهمتنا</h3>
+                    <p >نحن نعمل على تقديم العون والمساعدة لمن يحتاجها، ونؤمن بأن لكل شخص حق في فرصة جديدة.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- قسم دعوة للانضمام -->
-    <section id="call-to-action" class="py-5 text-white text-center" style="background-color: #156dcc;">
+    <section  id="call-to-action" class="py-5 text-white text-center bg-light" >
         <div class="container">
-            <h2>كن جزءًا من فريقنا</h2>
-            <p class="lead">ابدأ في تقديم يد العون لمن يحتاجه. كل مساهمة تحدث فرقاً!</p>
-            <button class="btn btn-light btn-lg mt-3" onclick="window.location.href='join.html'">انضم إلينا الآن</button>
+            <h2 style="color: #000000;">كن جزءًا من فريقنا</h2>
+            <p class="lead" style="color: #000000;">ابدأ في تقديم يد العون لمن يحتاجه. كل مساهمة تحدث فرقاً!</p>
+            <button class="btn btn-light btn-lg mt-3 shadow-lg" style="background-color: #2a5494; color: #fff;" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfa728bs1X2ZE7AbhBI8UupoXmsnql07yOy488mzMe4ZS7IuA/viewform?usp=sf_link'">انضم إلينا الآن</button>
         </div>
     </section>
 
@@ -86,7 +90,7 @@
             <p>تابعنا على وسائل التواصل الاجتماعي</p>
             <div class="social-icons d-flex justify-content-center">
                 <a href="https://www.instagram.com/foors_aa?igsh=NWc0anYxcGd0NXFn" class="text-white">
-                    <i  class="fa-brands fa-instagram " style="font-size: calc(1rem + 2vw);"></i>
+                    <img style="width: 40px; height: 40px;" class="shadow" src="./Instagram_icon.png.webp"></img>
                     
                 </a>
             </div>

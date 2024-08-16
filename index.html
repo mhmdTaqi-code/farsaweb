@@ -9,23 +9,49 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            direction: rtl;
+            font-family: 'Almarai', sans-serif;
+        }
+        .header-bg {
+            background-color: #2a5494; /* اللون الجديد */
+            color: #fff;
+        }
+        .logo-container {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo-container img {
+            width: auto;
+            max-height: 150px;
+        }
+    </style>
 </head>
 <body>
     <!-- قسم العنوان الرئيسي -->
-    <header class="bg-primary text-white text-center py-5">
+    <header class="header-bg text-white text-center py-5">
         <div class="container">
+                <!-- مكان لوضع اللوغو -->
+                <b style="font-size: calc(1.475rem + 2.7vw); font-weight: 400; margin-bottom: 100px;">فرصه</b>
+            
             <h1 class="display-4">معًا لبناء المستقبل</h1>
-            <p class="lead">نؤمن بأن لكل شخص حق في فرصة جديدة</p>
+            <p class="lead">نؤمن بأن التعليم هو الذي يغير الحاضر ويصنع المستقبل</p>
         </div>
     </header>
 
     <!-- قسم نبذة عن الفريق -->
     <section id="about-us" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">من نحن؟</h2>
-            <p class="lead text-center">فريق فرصة نخبة من الشباب، اجتمعنا على هدف واحد وهو مساعدة الناس وتقديم العون لمن يحتاجه. نشتغل بكل جهدنا على توفير المنفعة العامة، لأننا نؤمن أن كل شخص يستحق فرصة لبداية جديدة.</p>
-        </p>
+            <h2 class="text-center mb-4" style="color: #16263e;">من نحن؟</h2>
+            <p class="lead text-center">
+                فرصة! فريق شبابي مستقل يعمل بجد لتنظيم دورات تطوعية مجانية وتقديم أعمال خيرية تهدف إلى خدمة المجتمع وتعزيز قيم التعاون والتطور. 
+                نسعى أيضًا للمساهمة في مجالات متنوعة وفقًا لاحتياجات المجتمع وتطلعاتنا.
+            </p>
         </div>
     </section>
 
@@ -34,11 +60,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="text-primary">رؤيتنا</h3>
-                    <p>أن نكون اليد الممدودة لكل من يحتاج إلى دعم، وأن نساعد في بناء حياة أفضل للجميع.</p>                    
+                    <h3 style="color: #16263e;">رؤيتنا</h3>
+                    <p>أن نكون اليد الممدودة لكل من يحتاج إلى دعم، وأن نساعد في بناء حياة أفضل للجميع.</p>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-primary">مهمتنا</h3>
+                    <h3 style="color:  #16263e;">مهمتنا</h3>
                     <p>نحن نعمل على تقديم العون والمساعدة لمن يحتاجها، ونؤمن بأن لكل شخص حق في فرصة جديدة.</p>
                 </div>
             </div>
@@ -46,77 +72,30 @@
     </section>
 
     <!-- قسم دعوة للانضمام -->
-    <section id="call-to-action" class="py-5 text-white text-center" style="background-color: #007bff;">
+    <section id="call-to-action" class="py-5 text-white text-center" style="background-color: #156dcc;">
         <div class="container">
             <h2>كن جزءًا من فريقنا</h2>
             <p class="lead">ابدأ في تقديم يد العون لمن يحتاجه. كل مساهمة تحدث فرقاً!</p>
-            <button class="btn btn-light btn-lg mt-3" >انضم إلينا الآن</button>
+            <button class="btn btn-light btn-lg mt-3" onclick="window.location.href='join.html'">انضم إلينا الآن</button>
         </div>
     </section>
 
     <!-- قسم التواصل الاجتماعي -->
-    <footer class="py-4 bg-primary text-white text-center">
+    <footer class="py-4 text-white text-center header-bg">
         <div class="container">
             <p>تابعنا على وسائل التواصل الاجتماعي</p>
-            <div class="social-icons">
-                
+            <div class="social-icons d-flex justify-content-center">
                 <a href="https://www.instagram.com/foors_aa?igsh=NWc0anYxcGd0NXFn" class="text-white">
-                   instagram <i  class="bi bi-instagram"></i>
+                    <i  class="fa-brands fa-instagram " style="font-size: calc(1rem + 2vw);"></i>
+                    
                 </a>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS and Icons -->
+     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 </body>
 </html>
-
-<style>
-
-    /* General styles */
-body {
-    font-family: 'Almarai', sans-serif;
-    background-color: #f0f0f0;
-    direction: rtl;
-    text-align: right;
-}
-
-/* Header styles */
-header {
-    font-family: 'Almarai', sans-serif;
-}
-
-/* About Us Section */
-#about-us p {
-    font-size: 1.2em;
-}
-
-/* Timeline Section */
-#timeline .timeline-item {
-    font-family: 'Almarai', sans-serif;
-}
-
-/* Stats Section */
-#stats .stat-item p {
-    font-size: 1.1em;
-}
-
-/* Call to Action Section */
-#call-to-action h2, #call-to-action p {
-    font-family: 'Almarai', sans-serif;
-}
-
-/* Footer */
-footer .social-icons i {
-    font-size: 1.5em;
-}
-
-a{
-    text-decoration: none;
-}
-i{
-    color: #f0f0f0;
-}
-</style>
